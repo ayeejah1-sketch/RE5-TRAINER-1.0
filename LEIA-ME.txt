@@ -1,0 +1,16 @@
+RE5 ULTIMATE TRAINER (overlay D3D9)
+
+COMO USAR
+1. Extraia TODOS os arquivos na mesma pasta.
+2. Abra RE5Trainer.exe (ele pede permissao de administrador) e deixe a janela aberta.
+3. Abra o Resident Evil 5. O trainer detecta o jogo e carrega o overlay sozinho.
+4. Dentro do jogo (tela cheia), aperte F8 para abrir/fechar o menu. Use o mouse.
+
+ARQUIVOS
+- RE5Overlay.dll : o overlay (carregado automaticamente).
+- offsets.ini    : enderecos das funcoes. Funcao sem endereco aparece "(nao calibrado)".
+- RE5Trainer.cfg : suas configuracoes (criado automaticamente).
+- RE5Overlay.log : diagnostico (envie este arquivo se algo falhar).
+
+Antivirus podem acusar falso positivo (injecao de DLL). Adicione a pasta as excecoes.
+Nao use em partidas online com outras pessoas.
