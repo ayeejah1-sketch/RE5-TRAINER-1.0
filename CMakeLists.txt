@@ -19,7 +19,7 @@ FetchContent_Declare(minhook GIT_REPOSITORY https://github.com/TsudaKageyu/minho
 FetchContent_MakeAvailable(imgui minhook)
 
 add_library(RE5Overlay SHARED
-  src/dllmain.cpp src/features.cpp src/ui.cpp
+  dllmain.cpp features.cpp ui.cpp
   ${imgui_SOURCE_DIR}/imgui.cpp
   ${imgui_SOURCE_DIR}/imgui_draw.cpp
   ${imgui_SOURCE_DIR}/imgui_tables.cpp
@@ -36,6 +36,6 @@ target_compile_definitions(RE5Overlay PRIVATE _CRT_SECURE_NO_WARNINGS NOMINMAX)
 target_compile_options(RE5Overlay PRIVATE /utf-8 /MP)
 target_link_libraries(RE5Overlay PRIVATE d3d9 dinput8 dxguid dwmapi)
 
-add_executable(RE5Trainer src/injector.cpp)
+add_executable(RE5Trainer injector.cpp)
 target_compile_definitions(RE5Trainer PRIVATE _CRT_SECURE_NO_WARNINGS NOMINMAX)
 target_compile_options(RE5Trainer PRIVATE /utf-8)
